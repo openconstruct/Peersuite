@@ -1,64 +1,12 @@
-# Peersuite
-Peer to peer workspace 
-
- **Trystero-torrent stopped working and my webhost went down. Peersuite is continuing development as UmbraChat, a browser extension. The business focus has shifted, there is no more kanban, documents, or whiteboard.  I went with trystero-nostr and a free TURN server to fix communication in the port.  https://github.com/openconstruct/umbrachat **
-
- 
-![Screenshot_2025-05-27_07-34-11](https://github.com/user-attachments/assets/6e197eff-dd5a-47dc-b69f-196911286f3b)
-
-
-
-Peersuite is an open source, decentralized, private alternative to apps like Discord or Slack.
-All data is sent only between clients through encrypted WebRTC channels. There is no server.
-
-The tools included are: 
-- text chat with channels, PMs, image preview, and file send
-- collaborative document editing with PDF and TXT export
-- kanban board
-- screen sharing
-- video calling
-- audio calling
-- whiteboard for diagrams/flowcharts with PNG export
-
-If this is something you would like to be a part of, please send a PR.  EVen if it's just some CSS changes, this is a community project!
-
-Usage: You can use https://umbrabrowser.online/chat online   , download a docker image and run peersuite yourself, run it as a PWA on desktop or mobile, build your own docker image, or grab an executable from [releases](https://github.com/openconstruct/Peersuite/releases). 
-
-If you would like to report a bug or encounter any issues using Peersuite, please use github issues. Also great for feature requests!
-
-
-## Docker
-
-### Docker Hub
-
-#### Pull the image from [Docker Hub](https://hub.docker.com/repository/docker/openconstruct/peersuite)   
-```bash
-docker pull openconstruct/peersuite
-```    
-
-#### Run the image
-```bash
-docker run -p 8080:80 openconstruct/peersuite
-```
-
-This will start Peersuite and make it accessible at [http://localhost:8080](http://localhost:8080).
-
-### Locally build the image and then run it
-#### Build the Docker image
-```bash
-docker build -t peersuite .
-```
-### Run the Docker container
-```bash
-docker run -d -p 8080:80 peersuite
-```
-
-This will start Peersuite and make it accessible at [http://localhost:8080](http://localhost:8080).
-
-### Build and run it via docker compose
-
-```bash
-docker compose up -d
-```
-
-This will start Peersuite and make it accessible at [http://localhost:8080](http://localhost:8080).
+PeerSuite lives on as UmbraChat
+PeerSuite's development continues as UmbraChat — private, Discord-style
+chat that runs entirely in your browser. Peer-to-peer, no central server,
+no account.
+▶ Try it right now, no install: https://umbrabrowser.online/chat
+Get the extension:
+Chrome · https://chromewebstore.google.com/detail/umbrachat/jdgneoijldkiffdnhkibcdnajchecaip?hl=en-US&pli=1
+Firefox ·  https://addons.mozilla.org/en-US/firefox/addon/umbrachat/
+Edge - https://microsoftedge.microsoft.com/addons/detail/umbrachat/pnmkbgnplggpjbdchfpiglbjipaabblo
+Source & development: https://github.com/openconstruct/umbrachat
+*The workspace tools (kanban, documents, whiteboard) didn't make the move —
+UmbraChat is the rich chat, audio, video, and screensharing,focused and finished.*
